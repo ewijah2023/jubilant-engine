@@ -4,15 +4,21 @@
     scroll-behavior: smooth;
     
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Courier New', Courier, monospace, sans-serif;
+    line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .top-nav-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: slateblue;
+    background-color: rgb(24, 165, 253);
     border-radius: 20px;
     top: 0;
     left: 0;
@@ -40,7 +46,7 @@ li {
 }
 
 .welcome-section > p {
-    color: rgb(113, 113, 253);
+    color: rgb(24, 165, 253);
     font-weight: 800;
 }
 .welcome-section > h1 {
@@ -49,13 +55,40 @@ li {
 }
 
 a {
-    
+    text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
 .projects-section {
     text-align: center;
+    padding: 10rem 2rem;
+    background-color: rgb(102, 102, 250);
+}
+
+.projects-section-header {
+    padding: 16px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.project-tile {
+    background-color: rgb(33, 36, 41);
+    border-radius: 30px;
+}
+
+.project-tile:hover  {
+    border: solid lightblue;
+    border-radius: 16px;
+
+}
+
+.code {
+    color: rgb(102, 102, 250)
+}
+
+.code:hover {
+    color: white;
 }
 
 .projects-grid {
@@ -71,6 +104,7 @@ a {
 height: calc(100% - 6.8rem);
 width: 100%;
 object-fit: cover;
+border-radius: 20px;
 }
 img {
     display: block;
@@ -96,8 +130,4 @@ height: 80vh;
 
 .contact-details {
     padding: 10px;
-}
-
-.a-brands {
-    padding: 16px;
 }

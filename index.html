@@ -5,28 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class ="top-nav-bar">
         <ul>
-            <li>About</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <section id="welcome-section" class="welcome-section">
         <h1>Hi, I'm Elijah.</h1>
-        <p>*Aspiring web developer*</p>
+        <p>*aspiring web developer*</p>
     </section>
 
-    <section id="projects" class ="projects-section"></section>
+    <section id="projects" class ="projects-section">
+        <h2 class="projects-section-header">Here are some projects!</h2>
+            <div class="projects-grid">
+                <a href="https://ewijah2023.github.io/movie-webpage/" target="blank" class="project-tile">
+                    <img src="images/movie.png" class="project-image" alt="project">
+                    <p>A basic movie webpage</p>
+                </a>
+                <a href="https://ewijah2023.github.io/login-register-form/" target="blank" class="project-tile">
+                    <img src="images/login.jpg" class="project-image" alt="project">
+                    <p>A basic login webpage</p>
+                </a>
+
+                <a href="https://ewijah2023.github.io/odin-calculator/" target="blank" class="project-tile">
+                    <img src="images/calculator.jpg" class="project-image" alt="project">
+                    <p>A calculator made with javascript</p>
+                </a>
+                <a href="https://ewijah2023.github.io/rock-paper-scissors-odin/" target="blank" class="project-tile">
+                    <img src="images/rps.jpg" class="project-image" alt="project">
+                    <p>Rock paper scissors</p>
+                </a>
+            </div>
+
+    </section>
 
     <section id="contact" class="contact-section">
-        <div class="contact-section-header"></div>
+        <div class="contact-section-header">
+            <h2>Talk to me!</h2>
+            <p>I'm always interested in new experiences.</p>
+        </div>
         <div class="contact-links">
-            <a href="mailto:edgordon2023@gmail.com" class="contact-details">Email me!</a>
-            <a href="https://github.com/ewijah2023" target="blank">Github</a>
+            <a href="mailto:edgordon2023@gmail.com" class="contact-details"><i class="fa-solid fa-envelope"></i> Email me!</a>
+            <a href="https://github.com/ewijah2023" target="blank" id="profile-link" class="contact-details"><i class="fa-brands fa-github">
+            </i> Github</a>
         </div>
 
     </section>
@@ -36,5 +63,6 @@
         <p>~By Elijah</p>
     </footer>
     
+    <script src="https://kit.fontawesome.com/00ad0c1920.js" crossorigin="anonymous"></script>  
 </body>
 </html>

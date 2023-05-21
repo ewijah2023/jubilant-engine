@@ -64,7 +64,7 @@ a {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background-color: rgb(102, 102, 250);
+    background-color: rgb(85, 85, 85);
     box-sizing: inherit;
 }
 
@@ -96,10 +96,12 @@ a {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
 
 .project-image {
@@ -114,8 +116,10 @@ img {
 }
 
 footer {
+    font-weight: 250;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 2rem;
 }
 
 .contact-section {

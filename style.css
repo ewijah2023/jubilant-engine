@@ -1,12 +1,15 @@
-:root {
+html {
     background-color: rgb(33, 36, 41);
     color: whitesmoke;
     scroll-behavior: smooth;
+    box-sizing: border-box;
     
 }
-*{
+*, ::before, ::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+    
 }
 body {
     font-family: 'Courier New', Courier, monospace, sans-serif;
